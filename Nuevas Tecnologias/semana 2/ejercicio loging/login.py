@@ -1,26 +1,25 @@
-print("------------------------------")
-print("********** SIGN UP ***********")
-print("------------------------------")
-
-usu_name = input("Ingresa nombre: ")
-usu_email = input("Ingresa email: ")
-usu_phone = input("Ingresa número de teléfono: ")
-usu_password = input("Ingresa contraseña: ")
-
-print("------------------------------")
-print("*********** LOGIN ************")
+print("*---------- SIGN UP ----------*")
 print("------------------------------")
 
-captcha = 25
+user_name = input("Ingrese su nombre: ")
+user_email = input("Ingrese su email: ")
+user_phone = input("Ingrese su número de teléfono: ")
+user_password = input("Ingrese su contraseña: ")
 
-usu_validation = input("Ingrese email o número de telefono: ")
-password_validation = input("Ingrese contraseña: ")
-captcha_validation = input("CAPTCHA - Resuelva la siguiente ecuación: 5*5 = ?")
+
+print("*---------- LOGIN ----------*")
+print("------------------------------")
+
+captcha = 1
+
+user_validation = input("Ingrese su email o número de telefono: ")
+password_validation = input("Ingrese su contraseña: ")
+captcha_validation = input("CAPTCHA - Resuelva la siguiente ecuación: x+8-7, x= ?")
 int_captcha = int(captcha_validation)
 
-if usu_email == usu_validation or usu_phone == usu_validation:
-    if password_validation == usu_password:
+if user_email == user_validation or user_phone == user_validation:
+    if password_validation == user_password:
       if int_captcha == captcha:
-        print("Bienvenido" , usu_name)
+        print("Hola, " , user_name , "¿cómo estás?")
 else:
-  print("usuario o contraseña inválidos")
+  print("Usurario o contraseña inválidos")

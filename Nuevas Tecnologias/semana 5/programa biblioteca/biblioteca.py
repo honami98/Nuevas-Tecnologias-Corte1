@@ -52,7 +52,7 @@ def editar_libro():
                 libro.prestados = int(prestados)
             print("Libro editado con éxito.")
             return
-    print(f"No se encontró ningún libro con el ID {id_libro}.")
+    print(f"No se halló un libro con el id propircionado: {id_libro}")
 
 def menu():
     while True:
@@ -70,10 +70,10 @@ def menu():
         elif opcion == '3':
             editar_libro()
         elif opcion == '4':
-            print("¡Hasta luego!")
+            print("¡Hasta la vista, baby!")
             break
         else:
-            print("Opción no válida. Intente de nuevo.")
+            print("Opción inválida. Intentelo nuevamente.")
 
 if __name__ == "__main__":
     menu()
